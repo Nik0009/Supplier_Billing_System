@@ -1,0 +1,54 @@
+ <html>
+<head>
+	<script>
+    function printDiv(divName){
+      var printContents = document.getElementById(divName).innerHTML;
+      var originalContents = document.body.innerHTML;
+      document.body.innerHTML = printContents;
+      window.print();
+      document.body.innerHTML = originalContents;
+    }
+  </script>
+</head>
+<div id='printMe'>
+</table></font>
+<div align="center">
+	<body style="height: 147mm; width: 300mm; margin-top: 10px; margin-left: 8px;">
+<table border="">
+	<tr> <td  style= "text-align:center; border-width: 0px;" colspan="4" ><b style="font-size: 20px;">
+	&nbsp;&nbsp;LUCKY SALT SUPPLIER</b></td></tr>
+	<tr>
+		<td colspan="2" style="border-width: px;" rowspan="2">Customer Name: <b style="text-transform: uppercase; text-align: right;"> </b><br>
+		Contact: <br>
+		Payment Type:<b></b>
+
+		</td>
+		<td align="right" colspan="3">Date: </td>
+	</tr>
+	<tr>
+		<td colspan="3" align="right">Rc. No: <b>1</b></td>
+	</tr>
+	<tr>
+		<td style="padding-left: 0px;"><b>Sr No.</b></td>
+		<td><b>Particulars</b></td>
+		<td><b>Rate</b></td>
+		<td><b>Qty</b></td>
+		<td><b>Total</b></td>
+	</tr>
+	<tr >
+		<td style="padding-bottom: 150px; max-width: 25ch">
+			<br><div align=center>-------<br>-------</div>
+
+		</td>
+		<td style="padding-bottom: 150px; max-width: 15ch">
+			<div style='text-transform:uppercase'>		</td>
+		<td style="padding-bottom: 150px;">+0</td>
+		<td style="padding-bottom: 150px;" align="right"></td>
+		<td style="padding-bottom: 150px;" align="right"></td>
+		</tr>
+	
+	<tr><td colspan="2">Total :</td><td>0/-</td><td align="right"></td><td align="right"></td></tr>
+	<br />
+</div>
+	<button onclick="printDiv('printMe')">Print</button>
+</html>
